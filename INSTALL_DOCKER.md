@@ -107,3 +107,7 @@ docker run -itd --privileged --name argo3 --hostname ark1 -v /kudu:/data1/kudu -
 
 #### 默认 Mysql 密码是什么？
 Eguan@Grafana_123
+
+#### 确保安装磁盘大于100G，确保docker在对应的数据盘
+磁盘容量问题是造成安装后服务启动失败的常见问题，不少朋友直接安装在系统盘，一定在安装完docker之后，移动docker路径到数据盘（确保大于100G）
+操作步骤见：https://geek.analysys.cn/topic/153
